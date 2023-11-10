@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.gradle
+**/build
+**/*.pem
+/docs/proposals/pipeline 3 gen/**/images/**
+**.ob_bak

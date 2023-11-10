@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argo-playground-deployment
+  labels:
+    app: argo-playground
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argo-playground
+  template:
+    metadata:
+      labels:
+        app: argo-playground
+    spec:
+      containers:
+        - name: argo-playground
+          image: alpine:3.15.4
+          ports:
+            - containerPort: 80

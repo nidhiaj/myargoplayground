@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: argo-playground
-          image: alpine:3.15.4
+          image: shashankssriva/mymusicstats-arm64:1.0.2
           ports:
             - containerPort: 80
